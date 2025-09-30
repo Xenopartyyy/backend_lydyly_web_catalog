@@ -1,0 +1,29 @@
+PANDUAN IMPOR EXCEL PRODUK 
+
+---
+
+Ketentuan Impor Produk di Dashboard Agree
+
+1. Impor digunakan untuk mengunggah data barang dalam jumlah banyak ke web Agree.
+2. Format file yang diperbolehkan untuk diunggah adalah file Excel (.xlsx atau .xls).
+3. Format penulisan Excel yang dapat diunggah dapat ditemukan pada tombol "Download Template Impor."
+4. Kolom "Link Marketplace" (Shopee, Tokopedia, TikTok) tidak wajib diisi dan bersifat opsional.
+5. Kolom gambar tidak perlu diisi (gambar dapat diunggah saat mengedit barang). Hal ini bertujuan untuk efisiensi dan mempercepat proses pengunggahan data Excel.
+
+---
+
+Penjelasan Setiap Kolom dalam File Excel
+
+1. noart	: Kode artikel yang akan diinput (wajib diisi).
+2. kdktg	: Mengacu pada kode kategori yang terdapat dalam tabel kategori (wajib diisi).
+3. namabrand	: Nama brand terkait dengan produk yang terdapat dalam tabel brand (wajib diisi).
+4. nmbrg	: Nama dari barang yang akan diunggah (wajib diisi).
+5. ukbrg	: Ukuran barang yang tersedia untuk produk yang akan diunggah. Ukuran yang dapat dipilih adalah S, M, L, XL, XXL, 3L, 4L, 5L, 6L (wajib diisi).
+6. deskbrg	: Deskripsi produk yang akan ditampilkan di website (wajib diisi).
+7. hrgbrg	: Harga barang yang akan diunggah (wajib diisi).
+8. stokbrg	: Menunjukkan ketersediaan stok produk. Isian yang dapat dipilih adalah "Ready" atau "Kosong" (tanpa tanda petik) (wajib diisi).
+9. link_shopee	: Link penjualan produk di Shopee (opsional).
+10.link_tokped	: Link penjualan produk di Tokopedia (opsional).
+11.link_ttshop	: Link penjualan produk di TikTok Shop (opsional).
+
+---
