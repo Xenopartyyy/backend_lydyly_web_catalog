@@ -101,15 +101,27 @@ return [
             'driver' => 'sqlsrv',
             'url' => env('DB_URL'),
             'host' => env('DB_HOST', 'localhost'),
-            'port' => env('DB_PORT', '1433'),
+            // 'port' => env('DB_PORT', '1433'),
             'database' => env('DB_DATABASE', 'laravel'),
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', ''),
             'charset' => env('DB_CHARSET', 'utf8'),
             'prefix' => '',
             'prefix_indexes' => true,
-            // 'encrypt' => env('DB_ENCRYPT', 'yes'),
+            'encrypt' => env('DB_ENCRYPT', 'no'),
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
+        ],
+        'mssql' => [
+            'driver'   => 'sqlsrv',
+            'host'     => env('DB_HOST', '192.168.3.3'),  // Gunakan IP atau nama host
+            'port'     => env('DB_PORT', ''), // Tidak perlu menyebutkan port jika SQL Server Browser aktif
+            'database' => env('DB_DATABASE', 'DBLYDYLY'),
+            'username' => env('DB_USERNAME', 'INVACC'),
+            'password' => env('DB_PASSWORD', 'S4_INVEN@TORY'),
+            'charset'  => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'encrypt' => env('DB_ENCRYPT', 'no'),
+            'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'true'),
         ],
 
     ],
@@ -147,7 +159,7 @@ return [
 
         'options' => [
             'cluster' => env('REDIS_CLUSTER', 'redis'),
-            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
+            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_') . '_database_'),
         ],
 
         'default' => [
