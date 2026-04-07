@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\ReportController;
 use App\Http\Controllers\MainDashboardController; // Tambahkan ini
 use App\Http\Controllers\AuthController;
 
@@ -31,6 +32,11 @@ Route::middleware('auth:api')->group(function () {
             Route::post('/{ID}', [ProdukController::class, 'update']);
             Route::delete('/{ID}', [ProdukController::class, 'destroy']);
         });
+
+        Route::prefix('report')->group(function () {
+            Route::get('/gudang', [ReportController::class, 'getGudang']);
+            Route::get('/penjualan-periode', [ReportController::class, 'penjualanPeriode']);
+    });
         
     });
     

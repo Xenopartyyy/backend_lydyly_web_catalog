@@ -111,6 +111,18 @@ return [
             'encrypt' => env('DB_ENCRYPT', 'no'),
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
+    // 'mssql' => [
+    //     'driver'   => 'sqlsrv',
+    //     'host'     => env('DB_HOST', '(local)'),
+    //     'port'     => env('DB_PORT', '1433'),
+    //     'database' => env('DB_DATABASE', 'LDBCKUP_2026'),
+    //     'username' => env('DB_USERNAME', ''),
+    //     'password' => env('DB_PASSWORD', ''),
+    //     // 'charset'  => 'UTF-8',
+    //     // 'collation' dihapus ← ini penyebab error, khusus MySQL
+    //     'encrypt'  => env('DB_ENCRYPT', 'no'),
+    //     'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'true'),
+    // ],
         'mssql' => [
             'driver'   => 'sqlsrv',
             'host'     => env('DB_HOST', '192.168.3.3'),  // Gunakan IP atau nama host
